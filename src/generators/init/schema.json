@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "InitGenerator",
+  "title": "Init Generator",
+  "description": "Initializes Weaver configuration in the workspace",
+  "type": "object",
+  "properties": {
+    "defaultVersion": {
+      "type": "string",
+      "description": "Default Weaver version for the workspace"
+    },
+    "schemaDirectory": {
+      "type": "string",
+      "default": "weaver/",
+      "description": "Default schema directory for projects"
+    },
+    "outputDirectory": {
+      "type": "string",
+      "default": "dist/weaver/",
+      "description": "Default output directory for generated files"
+    },
+    "enabledByDefault": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether Weaver is enabled by default for new projects"
+    },
+    "skipInstall": {
+      "type": "boolean",
+      "default": false,
+      "description": "Skip Weaver executable installation"
+    },
+    "verbose": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable verbose output"
+    }
+  },
+  "additionalProperties": false
+}

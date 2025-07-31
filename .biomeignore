@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+
+# Test coverage
+coverage/
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Generated files
+generated/
+
+# Minified files
+*.min.js
+*.min.ts
+
+# Documentation
+*.md
+
+# Configuration files
+.git/
+.rhema/ 

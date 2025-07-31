@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ValidateExecutor",
+  "title": "Validate Executor",
+  "description": "Validates Weaver schema files",
+  "type": "object",
+  "properties": {
+    "dryRun": {
+      "type": "boolean",
+      "description": "Perform a dry run without making changes",
+      "default": false
+    },
+    "verbose": {
+      "type": "boolean",
+      "description": "Enable verbose output",
+      "default": false
+    },
+    "strict": {
+      "type": "boolean",
+      "description": "Enable strict validation mode",
+      "default": false
+    },
+    "ignoreWarnings": {
+      "type": "boolean",
+      "description": "Ignore validation warnings",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}

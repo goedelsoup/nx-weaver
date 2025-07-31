@@ -1,0 +1,60 @@
+{
+  "name": "@nx-weaver/plugin",
+  "version": "0.0.1",
+  "description": "Nx plugin for OpenTelemetry Weaver integration",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./executors/validate": "./src/executors/validate/index.ts",
+    "./executors/generate": "./src/executors/generate/index.ts",
+    "./executors/docs": "./src/executors/docs/index.ts",
+    "./executors/clean": "./src/executors/clean/index.ts",
+    "./generators/init": "./src/generators/init/index.ts",
+    "./generators/setup-project": "./src/generators/setup-project/index.ts"
+  },
+  "peerDependencies": {
+    "nx": ">=17.0.0"
+  },
+  "dependencies": {
+    "@nx/devkit": "^17.0.0",
+    "@nx/workspace": "^17.0.0",
+    "axios": "^1.6.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@nx/vite": "^17.0.0",
+    "@types/js-yaml": "^4.0.0",
+    "@types/node": "^18.0.0",
+    "@types/fs-extra": "^11.0.0",
+    "@biomejs/biome": "^1.5.0",
+    "js-yaml": "^4.1.0",
+    "nx": "^17.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "scripts": {
+    "build": "nx build nx-weaver",
+    "test": "vitest",
+    "test:unit": "vitest --run src/**/*.spec.ts",
+    "test:integration": "vitest --run src/test/e2e/**/*.spec.ts",
+    "test:performance": "vitest --run src/test/performance/**/*.spec.ts",
+    "test:e2e": "vitest --run src/test/e2e/**/*.spec.ts",
+    "test:weaver": "vitest --run src/test/e2e/weaver-integration.spec.ts",
+    "test:coverage": "vitest --coverage",
+    "test:watch": "vitest --watch",
+    "lint": "biome lint . --max-diagnostics=0",
+    "format": "biome format . --write",
+    "format:check": "biome format .",
+    "type-check": "tsc --noEmit",
+    "check": "biome check .",
+    "install": "pnpm install",
+    "clean": "pnpm store prune",
+    "docs:generate": "echo 'Documentation generation placeholder'",
+    "audit": "pnpm audit --audit-level high"
+  },
+  "keywords": ["nx", "opentelemetry", "weaver", "plugin"],
+  "author": "",
+  "license": "MIT"
+}

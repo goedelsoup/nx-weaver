@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "SetupProjectGenerator",
+  "title": "Setup Project Generator",
+  "description": "Sets up Weaver for a specific project",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Name of the project to set up",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "version": {
+      "type": "string",
+      "description": "Weaver version for this project"
+    },
+    "schemaDirectory": {
+      "type": "string",
+      "description": "Schema directory for this project"
+    },
+    "outputDirectory": {
+      "type": "string",
+      "description": "Output directory for generated files"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether Weaver is enabled for this project"
+    },
+    "skipTargets": {
+      "type": "boolean",
+      "default": false,
+      "description": "Skip target generation"
+    },
+    "verbose": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable verbose output"
+    }
+  },
+  "required": ["project"],
+  "additionalProperties": false
+}

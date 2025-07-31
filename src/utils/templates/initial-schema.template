@@ -1,0 +1,21 @@
+name: "{{projectName}}"
+version: "1.0.0"
+description: "OpenTelemetry schema for {{projectName}}"
+
+metrics:
+  - name: "example_metric"
+    type: "counter"
+    description: "Example metric for {{projectName}}"
+    unit: "1"
+    attributes:
+      - name: "service"
+        type: "string"
+        description: "Service name"
+
+traces:
+  - name: "example_span"
+    description: "Example span for {{projectName}}"
+    attributes:
+      - name: "operation"
+        type: "string"
+        description: "Operation name" 

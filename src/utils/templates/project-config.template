@@ -1,0 +1,14 @@
+{
+  "enabled": {{enabled}},
+  "version": "{{version}}",
+  "schemaDirectory": "{{schemaDirectory}}",
+  "outputDirectory": "{{outputDirectory}}",
+  "args": {
+    "validate": ["--strict"],
+    "generate": ["--typescript"],
+    "docs": ["--markdown"]
+  },
+  "environment": {
+    "WEAVER_LOG_LEVEL": "info"
+  }
+} 

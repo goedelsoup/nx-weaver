@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "DocsExecutor",
+  "title": "Docs Executor",
+  "description": "Generates documentation from Weaver schemas",
+  "type": "object",
+  "properties": {
+    "dryRun": {
+      "type": "boolean",
+      "description": "Perform a dry run without making changes",
+      "default": false
+    },
+    "verbose": {
+      "type": "boolean",
+      "description": "Enable verbose output",
+      "default": false
+    },
+    "format": {
+      "type": "string",
+      "enum": ["markdown", "html", "json"],
+      "description": "Output format for documentation",
+      "default": "markdown"
+    },
+    "outputPath": {
+      "type": "string",
+      "description": "Output path for generated documentation"
+    },
+    "includeExamples": {
+      "type": "boolean",
+      "description": "Include example code in documentation",
+      "default": true
+    }
+  },
+  "additionalProperties": false
+}

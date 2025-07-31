@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "CleanExecutor",
+  "title": "Clean Executor",
+  "description": "Removes generated files and directories",
+  "type": "object",
+  "properties": {
+    "dryRun": {
+      "type": "boolean",
+      "description": "Perform a dry run without making changes",
+      "default": false
+    },
+    "verbose": {
+      "type": "boolean",
+      "description": "Enable verbose output",
+      "default": false
+    },
+    "includeCache": {
+      "type": "boolean",
+      "description": "Include cache files in cleanup",
+      "default": false
+    },
+    "includeTemp": {
+      "type": "boolean",
+      "description": "Include temporary files in cleanup",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}

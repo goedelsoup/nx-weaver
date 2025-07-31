@@ -1,0 +1,11 @@
+{
+  "0.16.1": {
+    "version": "0.16.1",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "downloadUrl": "https://github.com/open-telemetry/weaver/releases/download/v0.16.1/weaver-aarch64-apple-darwin.tar.xz",
+    "downloadedAt": "2025-07-31T08:02:30.591Z",
+    "executablePath": ".nx-weaver-cache/0.16.1/weaver",
+    "fileSize": 22795520
+  }
+}

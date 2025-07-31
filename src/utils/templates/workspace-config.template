@@ -1,0 +1,18 @@
+{
+  "defaultVersion": "{{defaultVersion}}",
+  "schemaDirectory": "{{schemaDirectory}}",
+  "outputDirectory": "{{outputDirectory}}",
+  "enabledByDefault": {{enabledByDefault}},
+  "defaultArgs": {
+    "validate": ["--strict"],
+    "generate": ["--typescript"],
+    "docs": ["--markdown"]
+  },
+  "defaultEnvironment": {
+    "WEAVER_LOG_LEVEL": "info"
+  },
+  "cacheDirectory": ".weaver-cache",
+  "downloadTimeout": 30000,
+  "maxRetries": 3,
+  "verifyHashes": true
+} 

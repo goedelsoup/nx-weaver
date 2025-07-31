@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "GenerateExecutor",
+  "title": "Generate Executor",
+  "description": "Generates code from Weaver schemas",
+  "type": "object",
+  "properties": {
+    "dryRun": {
+      "type": "boolean",
+      "description": "Perform a dry run without making changes",
+      "default": false
+    },
+    "verbose": {
+      "type": "boolean",
+      "description": "Enable verbose output",
+      "default": false
+    },
+    "force": {
+      "type": "boolean",
+      "description": "Force regeneration even if files exist",
+      "default": false
+    },
+    "watch": {
+      "type": "boolean",
+      "description": "Watch for changes and regenerate automatically",
+      "default": false
+    },
+    "outputFormat": {
+      "type": "string",
+      "enum": ["typescript", "javascript", "json"],
+      "description": "Output format for generated code",
+      "default": "typescript"
+    }
+  },
+  "additionalProperties": false
+}
